@@ -6,4 +6,5 @@ public class PlayerScriptableObject : ScriptableObject
 {
     public PlayerView PlayerView;
     public Vector3 SpawnPosition;
+    public float PlayerMoveSpeed;
 }

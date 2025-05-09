@@ -1,6 +1,6 @@
 using UnityEngine;
 using Player;
-using UnityEngine.InputSystem;
+using Input;
 
 namespace Main
 {
@@ -8,6 +8,9 @@ namespace Main
     //Handles main game logic and creates services.
     public class GameService : GenericMonoSingleton<GameService>
     {
+        [Header("Services")]
+        [SerializeField] private InputService _inputService;
+
         [Header("Scriptable Objects")]
         [SerializeField] private PlayerScriptableObject _playerSO;
         
@@ -25,5 +28,7 @@ namespace Main
         {
             _playerService = new PlayerService(_playerSO);
         }
+
+        public InputService GetInputService() => _inputService;
     }
 }
