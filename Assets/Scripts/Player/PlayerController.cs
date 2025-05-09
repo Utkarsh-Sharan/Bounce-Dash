@@ -11,7 +11,7 @@ namespace Player
         private Rigidbody2D _playerRB;
         private PlayerScriptableObject _playerSO;
 
-        private Vector2 _targetPosition;
+        private float _moveAmount;
 
         public PlayerController(PlayerScriptableObject playerSO)
         {
@@ -27,15 +27,13 @@ namespace Player
 
         public void FixedUpdatePlayer()
         {
-            _playerRB.MovePosition(_targetPosition);
+            _playerRB.linearVelocity = new Vector2(_moveAmount * _playerSO.PlayerMoveSpeed, _playerRB.linearVelocity.y);
         }
 
         public void UpdatePlayer()
         {
             Vector2 moveInput = _moveAction.ReadValue<Vector2>();
-            float moveAmount = moveInput.x;
-
-            _targetPosition = _playerRB.position + new Vector2(moveAmount * _playerSO.PlayerMoveSpeed * Time.deltaTime, 0f);
+            _moveAmount = moveInput.x;
         }
     }
 }

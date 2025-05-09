@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerView: {fileID: -1786895739573058872, guid: 76656e1cda9bef9498217a8d62f05713, type: 3}
   SpawnPosition: {x: 0, y: 0, z: 0}
+  PlayerMoveSpeed: 20
