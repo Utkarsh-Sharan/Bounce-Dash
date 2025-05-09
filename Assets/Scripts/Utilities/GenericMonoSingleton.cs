@@ -1,18 +1,21 @@
 using UnityEngine;
 
-public class GenericMonoSingleton<T> : MonoBehaviour where T : GenericMonoSingleton<T>
+namespace Singleton
 {
-    private static T _instance;
-    public static T Instance { get { return _instance; } }
-
-    protected virtual void Awake()
+    public class GenericMonoSingleton<T> : MonoBehaviour where T : GenericMonoSingleton<T>
     {
-        if (_instance == null)
+        private static T _instance;
+        public static T Instance { get { return _instance; } }
+
+        protected virtual void Awake()
         {
-            _instance = (T)this;
-            DontDestroyOnLoad(gameObject);
+            if (_instance == null)
+            {
+                _instance = (T)this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else
+                Destroy(gameObject);
         }
-        else
-            Destroy(gameObject);
     }
 }

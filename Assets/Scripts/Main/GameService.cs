@@ -1,4 +1,5 @@
 using UnityEngine;
+using Singleton;
 using Player;
 using Input;
 

@@ -4,6 +4,8 @@ using Main;
 
 namespace Player
 {
+    //Following MVC architecture.
+    //Model is handled by scriptable object.
     public class PlayerController
     {
         private PlayerView _playerView;
