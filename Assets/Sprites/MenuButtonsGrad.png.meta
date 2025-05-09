@@ -1,0 +1,1181 @@
+fileFormatVersion: 2
+guid: a84fceb5fcf194b45a17fea5fdf9894a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2913195296280835336
+    second: MenuButtonsGrad_0
+  - first:
+      213: -694216320876022709
+    second: MenuButtonsGrad_1
+  - first:
+      213: 8896177328377043940
+    second: MenuButtonsGrad_2
+  - first:
+      213: -1575222800294172034
+    second: MenuButtonsGrad_3
+  - first:
+      213: 3797468370996917258
+    second: MenuButtonsGrad_4
+  - first:
+      213: 4609443892171847943
+    second: MenuButtonsGrad_5
+  - first:
+      213: -8475475983309904434
+    second: MenuButtonsGrad_6
+  - first:
+      213: 7755361754139881899
+    second: MenuButtonsGrad_7
+  - first:
+      213: -2937417364010299577
+    second: MenuButtonsGrad_8
+  - first:
+      213: 3884027897659663907
+    second: MenuButtonsGrad_9
+  - first:
+      213: -3529444792031151528
+    second: MenuButtonsGrad_10
+  - first:
+      213: -1174681147374196839
+    second: MenuButtonsGrad_11
+  - first:
+      213: -2812596449782825809
+    second: MenuButtonsGrad_12
+  - first:
+      213: -2376420312018508905
+    second: MenuButtonsGrad_13
+  - first:
+      213: -1238527402580278475
+    second: MenuButtonsGrad_14
+  - first:
+      213: -1204280821516015552
+    second: MenuButtonsGrad_15
+  - first:
+      213: -2883319001778656070
+    second: MenuButtonsGrad_16
+  - first:
+      213: -7346233621979353609
+    second: MenuButtonsGrad_17
+  - first:
+      213: -1864052172326631905
+    second: MenuButtonsGrad_18
+  - first:
+      213: 5922399456827710404
+    second: MenuButtonsGrad_19
+  - first:
+      213: 5044071827716694881
+    second: MenuButtonsGrad_20
+  - first:
+      213: -3343222499486790660
+    second: MenuButtonsGrad_21
+  - first:
+      213: 8866667218302022945
+    second: MenuButtonsGrad_22
+  - first:
+      213: 3262898251730733321
+    second: MenuButtonsGrad_23
+  - first:
+      213: 4651672669977597583
+    second: MenuButtonsGrad_24
+  - first:
+      213: 59457476595253490
+    second: MenuButtonsGrad_25
+  - first:
+      213: 9212565983779035510
+    second: MenuButtonsGrad_26
+  - first:
+      213: 695454613247922989
+    second: MenuButtonsGrad_27
+  - first:
+      213: -8484246337717720659
+    second: MenuButtonsGrad_28
+  - first:
+      213: 790782185952490610
+    second: MenuButtonsGrad_29
+  - first:
+      213: 7229407936417135628
+    second: MenuButtonsGrad_30
+  - first:
+      213: 1151609782862412303
+    second: MenuButtonsGrad_31
+  - first:
+      213: 1878926863809709877
+    second: MenuButtonsGrad_32
+  - first:
+      213: 1280421061548596552
+    second: MenuButtonsGrad_33
+  - first:
+      213: 8119077172295171743
+    second: MenuButtonsGrad_34
+  - first:
+      213: 6730475928167409725
+    second: MenuButtonsGrad_35
+  - first:
+      213: 6125235569939809421
+    second: MenuButtonsGrad_36
+  - first:
+      213: -5083633220742430159
+    second: MenuButtonsGrad_37
+  - first:
+      213: 4956976133504405028
+    second: MenuButtonsGrad_38
+  - first:
+      213: 2177086139251349750
+    second: MenuButtonsGrad_39
+  - first:
+      213: -272630261732637705
+    second: MenuButtonsGrad_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MenuButtonsGrad_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 605
+        width: 411
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805782cefafbd6820800000000000000
+      internalID: 2913195296280835336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_1
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 764
+        width: 237
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44f7ec2fe5ad56f0800000000000000
+      internalID: -694216320876022709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_2
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 656
+        width: 227
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb1ccc6522957b70800000000000000
+      internalID: 8896177328377043940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_3
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 739
+        width: 158
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7aae52853fa32ae0800000000000000
+      internalID: -1575222800294172034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_4
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 482
+        width: 172
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a047d031d5153b430800000000000000
+      internalID: 3797468370996917258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_5
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 656
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7093ffc4cc808ff30800000000000000
+      internalID: 4609443892171847943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_6
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 534
+        width: 106
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec565788f7f016a80800000000000000
+      internalID: -8475475983309904434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_7
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 656
+        width: 82
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1782cfc6490ab60800000000000000
+      internalID: 7755361754139881899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_8
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 565
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74f0a1578723c37d0800000000000000
+      internalID: -2937417364010299577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 323
+        width: 281
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32626b16bc6d6e530800000000000000
+      internalID: 3884027897659663907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_10
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 302
+        width: 100
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a71a459a4e40fc0800000000000000
+      internalID: -3529444792031151528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_11
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 491
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997a96e58b1b2bfe0800000000000000
+      internalID: -1174681147374196839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 340
+        width: 93
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac7b224e66a7f8d0800000000000000
+      internalID: -2812596449782825809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_13
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 429
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7932d192152450fd0800000000000000
+      internalID: -2376420312018508905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_14
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 474
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5338d9ca3eddfcee0800000000000000
+      internalID: -1238527402580278475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_15
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 424
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048e8bf29f8894fe0800000000000000
+      internalID: -1204280821516015552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_16
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 326
+        width: 158
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abc69d4f4a46cf7d0800000000000000
+      internalID: -2883319001778656070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_17
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 318
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fda3ec517fec0a90800000000000000
+      internalID: -7346233621979353609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_18
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 328
+        width: 99
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f160da9ec6e8126e0800000000000000
+      internalID: -1864052172326631905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86
+        width: 220
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb9e228de6903250800000000000000
+      internalID: 5922399456827710404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_20
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 175
+        width: 134
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163eb984a94200640800000000000000
+      internalID: 5044071827716694881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_21
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 169
+        width: 25
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb0ff099dc7a91d0800000000000000
+      internalID: -3343222499486790660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_22
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 169
+        width: 82
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1253e708bdabc0b70800000000000000
+      internalID: 8866667218302022945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_23
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 252
+        width: 89
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90947a02ca4284d20800000000000000
+      internalID: 3262898251730733321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_24
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 224
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f865861d5af0e8040800000000000000
+      internalID: 4651672669977597583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_25
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 210
+        width: 110
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f083bb824c33d000800000000000000
+      internalID: 59457476595253490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_26
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 219
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6791ff4b3fb99df70800000000000000
+      internalID: 9212565983779035510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_27
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 247
+        width: 54
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d239c0c3940c6a900800000000000000
+      internalID: 695454613247922989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_28
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 48
+        width: 134
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da92d6548e6e14a80800000000000000
+      internalID: -8484246337717720659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_29
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 57
+        width: 102
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 274b768553c69fa00800000000000000
+      internalID: 790782185952490610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_30
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 120
+        width: 112
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c78821734045460800000000000000
+      internalID: 7229407936417135628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_31
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 102
+        width: 110
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0af06bfef65bff00800000000000000
+      internalID: 1151609782862412303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_32
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 127
+        width: 82
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5370154170a431a10800000000000000
+      internalID: 1878926863809709877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_33
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 143
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d5888eb28f4c110800000000000000
+      internalID: 1280421061548596552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_34
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 75
+        width: 69
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ef2a6eba1cca070800000000000000
+      internalID: 8119077172295171743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 104
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d386cb37234776d50800000000000000
+      internalID: 6730475928167409725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_36
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 2
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8489d74c45310550800000000000000
+      internalID: 6125235569939809421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_37
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 9
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132c54d158e4379b0800000000000000
+      internalID: -5083633220742430159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_38
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 0
+        width: 104
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e8e9db787bac440800000000000000
+      internalID: 4956976133504405028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_39
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 4
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8d0871f40963e10800000000000000
+      internalID: 2177086139251349750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtonsGrad_40
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 7
+        width: 69
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f3876ea83c673cf0800000000000000
+      internalID: -272630261732637705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
