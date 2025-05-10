@@ -7,6 +7,7 @@ public class ObstacleScriptableObject : ScriptableObject
 {
     public List<ObstacleData> ObstacleDataList;
     public float ObstacleMoveSpeed;
+    public float ObstacleRotationSpeed;
 }
 
 [System.Serializable]

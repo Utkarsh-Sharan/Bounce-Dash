@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 533442804100704611}
   - component: {fileID: 740206033770552616}
   - component: {fileID: 8790105854423185118}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RightSideSpike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 9
-  m_Sprite: {fileID: 9092607584915671340, guid: 5370519ba1a3d334bb582576213bcad9, type: 3}
+  m_Sprite: {fileID: 3738232914781096804, guid: fa2887ac1a4a737448472d6eb8c31f2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -147,7 +147,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -155,7 +155,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.58, y: 1.47}
+    oldSize: {x: 0.56, y: 1.45}
     newSize: {x: 0.58, y: 1.47}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

@@ -33,5 +33,6 @@ namespace Main
         }
 
         public InputService GetInputService() => _inputService;
+        public ObstacleService GetObstacleService() => _obstacleService;
     }
 }

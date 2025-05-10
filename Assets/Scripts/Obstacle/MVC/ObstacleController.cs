@@ -4,12 +4,16 @@ namespace Obstacle
 {
     public class ObstacleController
     {
-        private ObstacleView _obstacleView;
+        protected float moveSpeed;
+        protected float rotationSpeed;
 
-        public virtual void MoveSpike()
+        public void Configure(float moveSpeed, float rotationSpeed)
         {
-            Vector2 moveDown = Vector2.down * 4 * Time.fixedDeltaTime;
-            _obstacleView.GetObstacleBody().MovePosition(_obstacleView.GetObstacleBody().position + moveDown);
+            this.moveSpeed = moveSpeed;
+            this.rotationSpeed = rotationSpeed;
         }
+
+        public virtual void FixedUpdateObstacle() { }
+        public virtual void HandleObstacleCollision(GameObject collisionObject) { }
     }
 }

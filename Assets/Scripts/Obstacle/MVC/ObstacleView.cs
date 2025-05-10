@@ -12,9 +12,14 @@ namespace Obstacle
             _obstacleController = obstacleController;
         }
 
-        protected void FixedUpdate()
+        private void FixedUpdate()
         {
-            _obstacleController.MoveSpike();
+            _obstacleController.FixedUpdateObstacle();
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            _obstacleController.HandleObstacleCollision(other.gameObject);
         }
 
         public Rigidbody2D GetObstacleBody() => _obstacleBody;
