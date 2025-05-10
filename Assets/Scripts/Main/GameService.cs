@@ -32,6 +32,11 @@ namespace Main
             _obstacleService = new ObstacleService(_obstacleSO);
         }
 
+        private void Update()
+        {
+            _obstacleService.Update();
+        }
+
         public InputService GetInputService() => _inputService;
         public ObstacleService GetObstacleService() => _obstacleService;
     }

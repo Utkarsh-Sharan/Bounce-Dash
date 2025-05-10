@@ -6,6 +6,7 @@ using Obstacle;
 public class ObstacleScriptableObject : ScriptableObject
 {
     public List<ObstacleData> ObstacleDataList;
+    public float ObstacleSpawnRate;
     public float ObstacleMoveSpeed;
     public float ObstacleRotationSpeed;
 }
