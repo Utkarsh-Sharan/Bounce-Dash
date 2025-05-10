@@ -5,16 +5,18 @@ namespace Obstacle
     public class ObstacleView : MonoBehaviour
     {
         [SerializeField] protected Rigidbody2D _obstacleBody;
+        private ObstacleController _obstacleController;
+
+        public void Initialize(ObstacleController obstacleController)
+        {
+            _obstacleController = obstacleController;
+        }
 
         protected void FixedUpdate()
         {
-            MoveSpike();
+            _obstacleController.MoveSpike();
         }
 
-        private void MoveSpike()
-        {
-            Vector2 moveDown = Vector2.down * 4 * Time.fixedDeltaTime;
-            _obstacleBody.MovePosition(_obstacleBody.position + moveDown);
-        }
+        public Rigidbody2D GetObstacleBody() => _obstacleBody;
     }
 }

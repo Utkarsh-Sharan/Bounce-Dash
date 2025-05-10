@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Obstacle
 {
-    public class RotatingSpikeObstacleView : ObstacleView
+    public class RotatingSpikeView : ObstacleView
     {
         
     }
