@@ -1173,7 +1173,48 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MenuButtonsGrad_0: 2913195296280835336
+      MenuButtonsGrad_1: -694216320876022709
+      MenuButtonsGrad_10: -3529444792031151528
+      MenuButtonsGrad_11: -1174681147374196839
+      MenuButtonsGrad_12: -2812596449782825809
+      MenuButtonsGrad_13: -2376420312018508905
+      MenuButtonsGrad_14: -1238527402580278475
+      MenuButtonsGrad_15: -1204280821516015552
+      MenuButtonsGrad_16: -2883319001778656070
+      MenuButtonsGrad_17: -7346233621979353609
+      MenuButtonsGrad_18: -1864052172326631905
+      MenuButtonsGrad_19: 5922399456827710404
+      MenuButtonsGrad_2: 8896177328377043940
+      MenuButtonsGrad_20: 5044071827716694881
+      MenuButtonsGrad_21: -3343222499486790660
+      MenuButtonsGrad_22: 8866667218302022945
+      MenuButtonsGrad_23: 3262898251730733321
+      MenuButtonsGrad_24: 4651672669977597583
+      MenuButtonsGrad_25: 59457476595253490
+      MenuButtonsGrad_26: 9212565983779035510
+      MenuButtonsGrad_27: 695454613247922989
+      MenuButtonsGrad_28: -8484246337717720659
+      MenuButtonsGrad_29: 790782185952490610
+      MenuButtonsGrad_3: -1575222800294172034
+      MenuButtonsGrad_30: 7229407936417135628
+      MenuButtonsGrad_31: 1151609782862412303
+      MenuButtonsGrad_32: 1878926863809709877
+      MenuButtonsGrad_33: 1280421061548596552
+      MenuButtonsGrad_34: 8119077172295171743
+      MenuButtonsGrad_35: 6730475928167409725
+      MenuButtonsGrad_36: 6125235569939809421
+      MenuButtonsGrad_37: -5083633220742430159
+      MenuButtonsGrad_38: 4956976133504405028
+      MenuButtonsGrad_39: 2177086139251349750
+      MenuButtonsGrad_4: 3797468370996917258
+      MenuButtonsGrad_40: -272630261732637705
+      MenuButtonsGrad_5: 4609443892171847943
+      MenuButtonsGrad_6: -8475475983309904434
+      MenuButtonsGrad_7: 7755361754139881899
+      MenuButtonsGrad_8: -2937417364010299577
+      MenuButtonsGrad_9: 3884027897659663907
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
