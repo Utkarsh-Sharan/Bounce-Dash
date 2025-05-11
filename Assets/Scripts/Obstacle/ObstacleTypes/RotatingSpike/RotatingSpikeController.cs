@@ -33,8 +33,8 @@ namespace Obstacle
 
         private void RotateSpike()
         {
-            Quaternion rotatation = Quaternion.Euler(0f, 0f, rotationSpeed * Time.fixedDeltaTime);
-            _rotatingSpikeView.GetObstacleBody().MoveRotation(rotatation);
+            Quaternion rotation = Quaternion.Euler(0f, 0f, rotationSpeed * Time.fixedDeltaTime);
+            _rotatingSpikeView.GetObstacleBody().MoveRotation(_rotatingSpikeView.transform.rotation * rotation);
         }
 
         public override void HandleObstacleCollision(GameObject collisionObject)
