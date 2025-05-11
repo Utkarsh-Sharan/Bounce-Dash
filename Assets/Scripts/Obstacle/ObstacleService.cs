@@ -1,5 +1,6 @@
-using ObjectPool;
 using UnityEngine;
+using ObjectPool;
+using Event;
 
 namespace Obstacle
 {
@@ -8,11 +9,14 @@ namespace Obstacle
         private ObstaclePool _obstaclePool;
         private ObstacleScriptableObject _obstacleSO;
 
+        private bool _isGameOver = false;
         private float _spawnTimer;
         private float _currentSpawnRate;
 
         public ObstacleService(ObstacleScriptableObject obstacleSO)
         {
+            EventService.Instance.OnPlayerDeathEvent.Addlistener(GameOver);
+
             _obstacleSO = obstacleSO;
             _obstaclePool = new ObstaclePool(_obstacleSO);
 
@@ -22,11 +26,14 @@ namespace Obstacle
 
         public void Update()
         {
-            _spawnTimer += Time.deltaTime;
-            if (_spawnTimer >= _currentSpawnRate)
+            if (!_isGameOver)
             {
-                SpawnObstacles();
-                _spawnTimer = 0;
+                _spawnTimer += Time.deltaTime;
+                if (_spawnTimer >= _currentSpawnRate)
+                {
+                    SpawnObstacles();
+                    _spawnTimer = 0;
+                }
             }
         }
 
@@ -37,5 +44,12 @@ namespace Obstacle
         }
 
         public void ReturnObstacleToPool(ObstacleController obstacle) => _obstaclePool.ReturnItem(obstacle);
+
+        private void GameOver() => _isGameOver = true;
+
+        ~ObstacleService()
+        {
+            EventService.Instance.OnPlayerDeathEvent.RemoveListener(GameOver);
+        }
     }
 }
