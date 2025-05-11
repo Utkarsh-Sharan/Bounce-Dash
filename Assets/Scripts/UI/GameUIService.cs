@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Event;
+using System.Collections;
 
 namespace Game.UI
 {
@@ -11,6 +12,12 @@ namespace Game.UI
         [SerializeField] private GameObject _mobileInputs;
         [SerializeField] private Button _restartButton;
         [SerializeField] private Button _mainMenuButton;
+        [SerializeField] private Text _scoreText;
+        [SerializeField] private Text _finalScoreText;
+        [SerializeField] private Text _coinsCollectedText;
+
+        private int _score = 0;
+        private bool _isGameOver = false;
 
         private void OnEnable()
         {
@@ -19,8 +26,25 @@ namespace Game.UI
             _mainMenuButton.onClick.AddListener(GoToMainMenu);
         }
 
+        private void Start()
+        {
+            StartCoroutine(ScoreRoutine());
+        }
+
+        private IEnumerator ScoreRoutine()
+        {
+            while (!_isGameOver)
+            {
+                _scoreText.text = $"Score: {(++_score).ToString()}";
+                yield return new WaitForSeconds(0.5f);
+            }
+        }
+
         private void GameOver()
         {
+            _isGameOver = true;
+            _finalScoreText.text = $"Score: {(_score).ToString()}";
+
             _mobileInputs.SetActive(false);
             _gameOverUIObject.SetActive(true);
         } 

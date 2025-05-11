@@ -2113,6 +2113,9 @@ MonoBehaviour:
   _mobileInputs: {fileID: 227865141}
   _restartButton: {fileID: 465112773}
   _mainMenuButton: {fileID: 95531562}
+  _scoreText: {fileID: 446394135}
+  _finalScoreText: {fileID: 2004325011}
+  _coinsCollectedText: {fileID: 1935560905}
 --- !u!1 &1855921481
 GameObject:
   m_ObjectHideFlags: 0
