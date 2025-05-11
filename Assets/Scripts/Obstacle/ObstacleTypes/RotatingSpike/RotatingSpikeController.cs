@@ -13,6 +13,12 @@ namespace Obstacle
             _rotatingSpikeView.Initialize(this);
         }
 
+        public override void Configure(float moveSpeed, float rotationSpeed)
+        {
+            _rotatingSpikeView.gameObject.SetActive(true);
+            base.Configure(moveSpeed, rotationSpeed);
+        }
+
         public override void FixedUpdateObstacle()
         {
             MoveSpike();

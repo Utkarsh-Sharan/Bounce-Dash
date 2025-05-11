@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace ObjectPool
@@ -8,11 +9,11 @@ namespace ObjectPool
 
         //If the item already exists in the scene and it's not being used, we simple activate that item and return it.
         //Else we create a new item, add it to the pool and return it.
-        protected T GetItem<U>() where U : T
+        protected T GetItem()
         {
             if(_pooledItems.Count > 0)
             {
-                PooledItem<T> item = _pooledItems.Find(item => !item.IsBeingUsed && item.Item is U);
+                PooledItem<T> item = _pooledItems.Find(item => !item.IsBeingUsed);
                 if(item != null)
                 {
                     item.IsBeingUsed = true;

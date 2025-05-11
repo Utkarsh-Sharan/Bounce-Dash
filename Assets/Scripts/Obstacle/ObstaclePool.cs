@@ -22,7 +22,7 @@ namespace ObjectPool
                 _obstacleDictionary[obstacle.ObstacleType] = (obstacle.ObstacleView, obstacle.ObstacleSpawnPoint);
         }
 
-        public ObstacleController GetObstacle() => GetItem<ObstacleController>();   //If GetItem() doesn't find any previously deactivated object, it creates a new object.
+        public ObstacleController GetObstacle() => GetItem();   //If GetItem() doesn't find any previously deactivated object, it creates a new object.
 
         protected override ObstacleController CreateItem()
         {

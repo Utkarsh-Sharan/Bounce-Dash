@@ -1,5 +1,5 @@
-using Main;
 using UnityEngine;
+using Main;
 
 namespace Obstacle
 {
@@ -11,6 +11,12 @@ namespace Obstacle
         {
             _spikeView = (SpikeView)Object.Instantiate(obstacleView, spawnPoint, Quaternion.identity);
             _spikeView.Initialize(this);
+        }
+
+        public override void Configure(float moveSpeed, float rotationSpeed)
+        {
+            _spikeView.gameObject.SetActive(true);
+            base.Configure(moveSpeed, rotationSpeed);
         }
 
         public override void FixedUpdateObstacle()

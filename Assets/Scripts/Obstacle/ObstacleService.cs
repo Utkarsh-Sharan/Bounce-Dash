@@ -17,16 +17,16 @@ namespace Obstacle
             _obstaclePool = new ObstaclePool(_obstacleSO);
 
             _currentSpawnRate = _obstacleSO.ObstacleSpawnRate;
-            _spawnTimer = _currentSpawnRate;
+            _spawnTimer = 0f;
         }
 
         public void Update()
         {
-            _spawnTimer -= Time.deltaTime;
-            if (_spawnTimer <= 0)
+            _spawnTimer += Time.deltaTime;
+            if (_spawnTimer >= _currentSpawnRate)
             {
                 SpawnObstacles();
-                _spawnTimer = _currentSpawnRate;
+                _spawnTimer = 0;
             }
         }
 

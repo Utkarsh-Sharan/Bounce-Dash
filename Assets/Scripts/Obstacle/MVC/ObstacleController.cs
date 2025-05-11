@@ -7,7 +7,7 @@ namespace Obstacle
         protected float moveSpeed;
         protected float rotationSpeed;
 
-        public void Configure(float moveSpeed, float rotationSpeed)
+        public virtual void Configure(float moveSpeed, float rotationSpeed)
         {
             this.moveSpeed = moveSpeed;
             this.rotationSpeed = rotationSpeed;

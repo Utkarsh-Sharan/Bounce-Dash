@@ -22,5 +22,6 @@ MonoBehaviour:
   - ObstacleType: 2
     ObstacleView: {fileID: 2012088908432252346, guid: ffc8698f0c8373f40a3bce3e6caaff2b, type: 3}
     ObstacleSpawnPoint: {x: 0, y: 6, z: 0}
-  ObstacleMoveSpeed: 4
+  ObstacleSpawnRate: 1
+  ObstacleMoveSpeed: 5
   ObstacleRotationSpeed: 90
