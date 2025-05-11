@@ -20,12 +20,12 @@
 
 ## Game Mechanics
 
-- Bouncing physics using `Rigidbody2D` or custom logic.
+- Bouncing physics using `Rigidbody2D` and `Physics Material`.
 - Smooth horizontal movement for responsive control.
 - Dynamic spawning of obstacles and collectibles.
 - Scoring system based on:
   - Time survived
-  - Coins/gems collected
+  - Coins collected
 
 ---
 
@@ -35,7 +35,7 @@
 - Game Over Screen showing:
   - Final score
   - Restart and Main Menu buttons
-- UI Animations created using Unity's **Timeline** system
+- UI Animations created using Unity's `Timeline` system
 
 ---
 
