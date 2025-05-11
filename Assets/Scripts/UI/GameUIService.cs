@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Event;
 
 namespace Game.UI
 {
@@ -13,6 +14,7 @@ namespace Game.UI
 
         private void OnEnable()
         {
+            EventService.Instance.OnPlayerDeathEvent.Addlistener(GameOver);
             _restartButton.onClick.AddListener(RestartGame);
             _mainMenuButton.onClick.AddListener(GoToMainMenu);
         }
@@ -28,6 +30,7 @@ namespace Game.UI
 
         private void OnDisable()
         {
+            EventService.Instance.OnPlayerDeathEvent.RemoveListener(GameOver);
             _restartButton.onClick.RemoveListener(RestartGame);
             _mainMenuButton.onClick.RemoveListener(GoToMainMenu);
         }

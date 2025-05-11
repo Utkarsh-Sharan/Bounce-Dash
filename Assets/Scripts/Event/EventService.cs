@@ -1,16 +1,21 @@
-using UnityEngine;
+using Singleton;
 
-public class EventService : MonoBehaviour
+namespace Event
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    //Custom event service.
+    public class EventService : GenericMonoSingleton<EventService>
     {
-        
-    }
+        public EventController OnPlayerDeathEvent { get; private set; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        protected override void Awake()
+        {
+            base.Awake();
+            InitializeEvents();
+        }
+
+        private void InitializeEvents()
+        {
+            OnPlayerDeathEvent = new EventController();
+        }
     }
 }

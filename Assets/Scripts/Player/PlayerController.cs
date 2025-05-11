@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using Main;
 using Obstacle;
+using Event;
 
 namespace Player
 {
@@ -43,7 +44,8 @@ namespace Player
         {
             if (otherObject.GetComponent<ObstacleView>())
             {
-
+                EventService.Instance.OnPlayerDeathEvent.InvokeEvent();
+                _playerView.gameObject.SetActive(false);
             }
         }
     }
