@@ -53,6 +53,14 @@
 
 ---
 
+## Setup
+
+- Clone the repository.
+- Open this project in Unity 6+.
+- Press Play or Build to your target platform.
+
+---
+
 ## Optimization Approach
 
 To ensure smooth gameplay and performance across devices, especially mobile platforms, the following optimizations were implemented:
