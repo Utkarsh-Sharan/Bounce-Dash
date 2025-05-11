@@ -15,7 +15,7 @@ namespace Obstacle
 
         public override void Configure(float moveSpeed, float rotationSpeed)
         {
-            _rotatingSpikeView.gameObject.SetActive(true);
+            //_rotatingSpikeView.gameObject.SetActive(true);
             base.Configure(moveSpeed, rotationSpeed);
         }
 

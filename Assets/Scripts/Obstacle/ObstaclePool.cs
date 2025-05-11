@@ -18,6 +18,9 @@ namespace ObjectPool
             _obstacleDictionary = new Dictionary<ObstacleType, (ObstacleView, Vector3)>();
             _obstacleSO = obstacleSO;
 
+            //Storing obstacle data in a dictionary, so that it takes O(1) time to create new obstacle.
+            //KEY   : obstacle type.
+            //VALUE : obstacle view and its spawn position.
             foreach (ObstacleData obstacle in _obstacleSO.ObstacleDataList)
                 _obstacleDictionary[obstacle.ObstacleType] = (obstacle.ObstacleView, obstacle.ObstacleSpawnPoint);
         }

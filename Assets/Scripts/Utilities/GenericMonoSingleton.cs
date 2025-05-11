@@ -12,7 +12,6 @@ namespace Singleton
             if (_instance == null)
             {
                 _instance = (T)this;
-                DontDestroyOnLoad(gameObject);
             }
             else
                 Destroy(gameObject);
