@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Main;
+using Obstacle;
+using Event;
 
 namespace Player
 {
@@ -36,6 +38,15 @@ namespace Player
         {
             Vector2 moveInput = _moveAction.ReadValue<Vector2>();
             _moveAmount = moveInput.x;
+        }
+
+        public void HandlePlayerObstacleCollision(GameObject otherObject)
+        {
+            if (otherObject.GetComponent<ObstacleView>())
+            {
+                EventService.Instance.OnPlayerDeathEvent.InvokeEvent();
+                _playerView.gameObject.SetActive(false);
+            }
         }
     }
 }

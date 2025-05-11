@@ -23,6 +23,11 @@ namespace Player
             _playerController.UpdatePlayer();
         }
 
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            _playerController.HandlePlayerObstacleCollision(other.gameObject);
+        }
+
         public Rigidbody2D GetPlayerBody() => _playerRB;
     }
 }

@@ -1,5 +1,6 @@
-using ObjectPool;
 using UnityEngine;
+using ObjectPool;
+using Event;
 
 namespace Obstacle
 {
@@ -8,29 +9,13 @@ namespace Obstacle
         private ObstaclePool _obstaclePool;
         private ObstacleScriptableObject _obstacleSO;
 
-        private float _spawnTimer;
-        private float _currentSpawnRate;
-
         public ObstacleService(ObstacleScriptableObject obstacleSO)
         {
             _obstacleSO = obstacleSO;
             _obstaclePool = new ObstaclePool(_obstacleSO);
-
-            _currentSpawnRate = _obstacleSO.ObstacleSpawnRate;
-            _spawnTimer = 0f;
         }
 
-        public void Update()
-        {
-            _spawnTimer += Time.deltaTime;
-            if (_spawnTimer >= _currentSpawnRate)
-            {
-                SpawnObstacles();
-                _spawnTimer = 0;
-            }
-        }
-
-        private void SpawnObstacles()
+        public void SpawnObstacles()
         {
             ObstacleController spawnedObstacle = _obstaclePool.GetObstacle();
             spawnedObstacle.Configure(_obstacleSO.ObstacleMoveSpeed, _obstacleSO.ObstacleRotationSpeed);
