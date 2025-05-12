@@ -5,6 +5,7 @@ using Event;
 using Player;
 using Input;
 using Obstacle;
+using Coin;
 
 namespace Main
 {
@@ -16,10 +17,12 @@ namespace Main
         [SerializeField] private InputService _inputService;
         private PlayerService _playerService;
         private ObstacleService _obstacleService;
+        private CoinService _coinService;
 
         [Header("Scriptable Objects")]
         [SerializeField] private PlayerScriptableObject _playerSO;
         [SerializeField] private ObstacleScriptableObject _obstacleSO;
+        [SerializeField] private CoinScriptableObject _coinSO;
 
         private bool _isGameOver = false;
 
@@ -27,23 +30,22 @@ namespace Main
         {
             base.Awake();
 
-            CreateServices();
+            CreateServicesAndStartGame();
         }
 
-        private void CreateServices()
+        private void CreateServicesAndStartGame()
         {
             _playerService = new PlayerService(_playerSO);
             _obstacleService = new ObstacleService(_obstacleSO);
+            _coinService = new CoinService(_coinSO);
+
+            StartCoroutine(ObstacleSpawnRoutine());
+            StartCoroutine(CoinSpawnRoutine());
         }
 
         private void OnEnable()
         {
-            EventService.Instance.OnPlayerDeathEvent.Addlistener(GameOver);
-        }
-
-        private void Start()
-        {
-            StartCoroutine(ObstacleSpawnRoutine());
+            EventService.Instance.OnPlayerDeathEvent.AddListener(GameOver);
         }
 
         private IEnumerator ObstacleSpawnRoutine()
@@ -55,10 +57,20 @@ namespace Main
             }
         }
 
+        private IEnumerator CoinSpawnRoutine()
+        {
+            while (!_isGameOver)
+            {
+                _coinService.SpawnCoins();
+                yield return new WaitForSeconds(_coinSO.CoinSpawnRate);
+            }
+        }
+
         private void GameOver() => _isGameOver = true;
 
         public InputService GetInputService() => _inputService;
         public ObstacleService GetObstacleService() => _obstacleService;
+        public CoinService GetCoinService() => _coinService;
 
         private void OnDisable()
         {

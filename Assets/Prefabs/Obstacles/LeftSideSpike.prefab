@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7656839007711694378}
   - component: {fileID: 6743928580147830396}
   - component: {fileID: 7789103283535795293}
-  - component: {fileID: 1833837019265271649}
+  - component: {fileID: 3194294110323146660}
   m_Layer: 7
   m_Name: LeftSideSpike
   m_TagString: Untagged
@@ -105,7 +105,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -163,7 +163,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.58, y: 1.47}
   m_EdgeRadius: 0
---- !u!114 &1833837019265271649
+--- !u!114 &3194294110323146660
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

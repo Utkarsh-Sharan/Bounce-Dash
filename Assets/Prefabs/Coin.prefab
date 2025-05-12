@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4109601639622849212
+--- !u!1 &130203918637220260
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2972424272913656425}
-  - component: {fileID: 6112506707690169475}
-  - component: {fileID: 4546853786399873477}
-  - component: {fileID: 8933589111250156726}
-  - component: {fileID: 2012088908432252346}
-  m_Layer: 7
-  m_Name: RotatingSpikeObstacle
+  - component: {fileID: 5264265544506567894}
+  - component: {fileID: 7062098619741786562}
+  - component: {fileID: 1451464230930923401}
+  - component: {fileID: 5681279320680128296}
+  - component: {fileID: 3739387272491902955}
+  m_Layer: 9
+  m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2972424272913656425
+--- !u!4 &5264265544506567894
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4109601639622849212}
+  m_GameObject: {fileID: 130203918637220260}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6112506707690169475
+--- !u!212 &7062098619741786562
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4109601639622849212}
+  m_GameObject: {fileID: 130203918637220260}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -78,26 +78,26 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
-  m_Sprite: {fileID: 7384289023916650005, guid: 7c9f0e06d9dec4349808d91494ccda1c, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7675826601332790545, guid: 91adabc9dd610614ab0baac6c2a1991e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.6, y: 1.65}
+  m_Size: {x: 2.67, y: 3.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &4546853786399873477
+--- !u!50 &1451464230930923401
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4109601639622849212}
+  m_GameObject: {fileID: 130203918637220260}
   m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -105,7 +105,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -117,13 +117,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &8933589111250156726
-CircleCollider2D:
+--- !u!70 &5681279320680128296
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4109601639622849212}
+  m_GameObject: {fileID: 130203918637220260}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -151,18 +151,19 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.825
---- !u!114 &2012088908432252346
+  m_Offset: {x: 0.05300045, y: 0}
+  m_Size: {x: 2.5357325, y: 3.28}
+  m_Direction: 0
+--- !u!114 &3739387272491902955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4109601639622849212}
+  m_GameObject: {fileID: 130203918637220260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ec8436dc42ff244d88feab661a5d0b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 632d3f7d141cc7749978f305a50c722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _obstacleBody: {fileID: 4546853786399873477}
+  _coinBody: {fileID: 1451464230930923401}

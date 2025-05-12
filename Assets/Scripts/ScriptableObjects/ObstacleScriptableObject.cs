@@ -9,6 +9,7 @@ public class ObstacleScriptableObject : ScriptableObject
     public float ObstacleSpawnRate;
     public float ObstacleMoveSpeed;
     public float ObstacleRotationSpeed;
+    public int InitialObstacleCount;
 }
 
 [System.Serializable]
@@ -23,5 +24,5 @@ public enum ObstacleType
 {
     Left_Side_Spike,
     Right_Side_Spike,
-    Rotating_Spike
+    Rotating_Spike,
 }

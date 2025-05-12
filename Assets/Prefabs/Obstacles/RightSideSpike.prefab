@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4919075971220916176}
   - component: {fileID: 533442804100704611}
   - component: {fileID: 740206033770552616}
-  - component: {fileID: 8790105854423185118}
+  - component: {fileID: 4431780927884857845}
   m_Layer: 7
   m_Name: RightSideSpike
   m_TagString: Untagged
@@ -28,13 +28,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584237272196268377}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4919075971220916176
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -105,7 +105,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -163,7 +163,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.58, y: 1.47}
   m_EdgeRadius: 0
---- !u!114 &8790105854423185118
+--- !u!114 &4431780927884857845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 584237272196268377}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c240949bf8445ac438171b1dddfe70bc, type: 3}
+  m_Script: {fileID: 11500000, guid: e45dc477c87ebc14d8b6b31e86e7e60c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _obstacleBody: {fileID: 533442804100704611}

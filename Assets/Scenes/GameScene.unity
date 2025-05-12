@@ -1123,7 +1123,7 @@ GameObject:
   - component: {fileID: 723918977}
   - component: {fileID: 723918980}
   - component: {fileID: 723918979}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: ObstacleDeactivator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1727,6 +1727,7 @@ MonoBehaviour:
   _inputService: {fileID: 547967486}
   _playerSO: {fileID: 11400000, guid: fd6176097d25ab649a09205c4da9cb63, type: 2}
   _obstacleSO: {fileID: 11400000, guid: cd6a2e7b59f29af46b801dd68b7ce158, type: 2}
+  _coinSO: {fileID: 11400000, guid: 9e95eb20c457d2c438c63573045bad4d, type: 2}
 --- !u!4 &1507309222
 Transform:
   m_ObjectHideFlags: 0

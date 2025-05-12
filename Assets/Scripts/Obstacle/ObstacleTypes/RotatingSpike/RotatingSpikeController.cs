@@ -6,16 +6,17 @@ namespace Obstacle
     public class RotatingSpikeController : ObstacleController
     {
         private RotatingSpikeView _rotatingSpikeView;
+        private Vector3 _spawnPosition;
 
-        public RotatingSpikeController(ObstacleView obstacleView, Vector3 spawnPoint) : base()
+        public RotatingSpikeController(ObstacleView obstacleView, Vector3 spawnPosition)
         {
-            _rotatingSpikeView = (RotatingSpikeView)Object.Instantiate(obstacleView, spawnPoint, obstacleView.transform.rotation);
+            _rotatingSpikeView = (RotatingSpikeView)obstacleView;
+            _spawnPosition = spawnPosition;
             _rotatingSpikeView.Initialize(this);
         }
 
         public override void Configure(float moveSpeed, float rotationSpeed)
         {
-            //_rotatingSpikeView.gameObject.SetActive(true);
             base.Configure(moveSpeed, rotationSpeed);
         }
 
@@ -40,10 +41,15 @@ namespace Obstacle
         public override void HandleObstacleCollision(GameObject collisionObject)
         {
             if (collisionObject.GetComponent<ObstacleDeactivator>() != null)   //If this obstacle collides with ObstacleDeactivator, it deactivates and returns to the pool.
-            {
-                _rotatingSpikeView.gameObject.SetActive(false);
-                GameService.Instance.GetObstacleService().ReturnObstacleToPool(this);
-            }
+                GameService.Instance.GetObstacleService().ReturnObstacleToPool(this, ObstacleType.Rotating_Spike);
         }
+
+        public override void ActivateObject()
+        {
+            _rotatingSpikeView.gameObject.SetActive(true);
+            _rotatingSpikeView.transform.position = _spawnPosition;
+        } 
+
+        public override void DeactivateObject() => _rotatingSpikeView.gameObject.SetActive(false);
     }
 }
