@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObstacleDataList:
   - ObstacleType: 0
-    ObstacleView: {fileID: 1833837019265271649, guid: 5c85aba81ffd31e4dadb50e414c82726, type: 3}
+    ObstacleView: {fileID: 3194294110323146660, guid: 5c85aba81ffd31e4dadb50e414c82726, type: 3}
     ObstacleSpawnPoint: {x: -2.2, y: 5.9, z: 0}
   - ObstacleType: 1
-    ObstacleView: {fileID: 8790105854423185118, guid: 68bafd7c56adcc34d97cb6987a93c7fb, type: 3}
+    ObstacleView: {fileID: 4431780927884857845, guid: 68bafd7c56adcc34d97cb6987a93c7fb, type: 3}
     ObstacleSpawnPoint: {x: 2.2, y: 5.9, z: 0}
   - ObstacleType: 2
     ObstacleView: {fileID: 2012088908432252346, guid: ffc8698f0c8373f40a3bce3e6caaff2b, type: 3}
@@ -25,3 +25,4 @@ MonoBehaviour:
   ObstacleSpawnRate: 1
   ObstacleMoveSpeed: 5
   ObstacleRotationSpeed: 90
+  ObstacleCount: 4

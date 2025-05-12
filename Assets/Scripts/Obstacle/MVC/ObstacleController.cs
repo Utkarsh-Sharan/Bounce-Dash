@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Obstacle
 {
-    public class ObstacleController
+    public abstract class ObstacleController
     {
         protected float moveSpeed;
         protected float rotationSpeed;
@@ -13,7 +13,10 @@ namespace Obstacle
             this.rotationSpeed = rotationSpeed;
         }
 
-        public virtual void FixedUpdateObstacle() { }
-        public virtual void HandleObstacleCollision(GameObject collisionObject) { }
+        public abstract void FixedUpdateObstacle();
+        public abstract void HandleObstacleCollision(GameObject collisionObject);
+
+        public abstract void ActivateObject();
+        public abstract void DeactivateObject();
     }
 }

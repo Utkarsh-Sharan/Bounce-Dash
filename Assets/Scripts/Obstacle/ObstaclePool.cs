@@ -1,58 +1,76 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Obstacle;
+using Event;
 
 namespace ObjectPool
 {
     //This script creates/activates random obstacles.
     public class ObstaclePool : GenericObjectPool<ObstacleController>
     {
-        private Dictionary<ObstacleType, (ObstacleView, Vector3)> _obstacleDictionary;
+        private Dictionary<ObstacleType, Queue<ObstacleController>> _obstaclePool;
         private ObstacleScriptableObject _obstacleSO;
-
-        private ObstacleView _obstacleView;
-        private Vector3 _spawnPoint;
 
         public ObstaclePool(ObstacleScriptableObject obstacleSO)
         {
-            _obstacleDictionary = new Dictionary<ObstacleType, (ObstacleView, Vector3)>();
             _obstacleSO = obstacleSO;
+            _obstaclePool = new Dictionary<ObstacleType, Queue<ObstacleController>>();
 
-            //Storing obstacle data in a dictionary, so that it takes O(1) time to create new obstacle.
-            //KEY   : obstacle type.
-            //VALUE : obstacle view and its spawn position.
-            foreach (ObstacleData obstacle in _obstacleSO.ObstacleDataList)
-                _obstacleDictionary[obstacle.ObstacleType] = (obstacle.ObstacleView, obstacle.ObstacleSpawnPoint);
+            foreach (ObstacleData data in _obstacleSO.ObstacleDataList)
+            {
+                _obstaclePool[data.ObstacleType] = new Queue<ObstacleController>();
+
+                //Pre-instantiate a few of each obstacle type
+                for (int i = 0; i < _obstacleSO.ObstacleCount; ++i)
+                {
+                    ObstacleController controller = CreateObstacle(data);
+                    controller.DeactivateObject();
+                    _obstaclePool[data.ObstacleType].Enqueue(controller);
+                }
+            }
         }
 
-        public ObstacleController GetObstacle() => GetItem();   //If GetItem() doesn't find any previously deactivated object, it creates a new object.
-
-        protected override ObstacleController CreateItem()
+        public ObstacleController GetObstacle()
         {
-            ObstacleType randomObstacleType = (ObstacleType)Random.Range(0, _obstacleDictionary.Keys.Count);
+            ObstacleType randomType = (ObstacleType)Random.Range(0, _obstaclePool.Keys.Count);
 
-            switch (randomObstacleType)
+            //Reusing obstacle from pool
+            if (_obstaclePool[randomType].Count > 0)
+            {
+                ObstacleController reusedObstacle = _obstaclePool[randomType].Dequeue();
+                reusedObstacle.ActivateObject();
+
+                return reusedObstacle;
+            }
+
+            //Creating random obstacle if pool is empty
+            ObstacleData obstacleData = _obstacleSO.ObstacleDataList.Find(o => o.ObstacleType == randomType);
+            return CreateObstacle(obstacleData);
+        }
+
+        public void ReturnObstacle(ObstacleController obstacleController, ObstacleType type)
+        {
+            obstacleController.DeactivateObject();
+            _obstaclePool[type].Enqueue(obstacleController);
+        }
+
+        private ObstacleController CreateObstacle(ObstacleData obstacleData)
+        {
+            ObstacleView obstacleView = Object.Instantiate(obstacleData.ObstacleView, obstacleData.ObstacleSpawnPoint, obstacleData.ObstacleView.transform.rotation);
+
+            switch(obstacleData.ObstacleType)
             {
                 case ObstacleType.Left_Side_Spike:
-                    _obstacleView = _obstacleDictionary[ObstacleType.Left_Side_Spike].Item1;
-                    _spawnPoint = _obstacleDictionary[ObstacleType.Left_Side_Spike].Item2;
-
-                    return new SpikeController(_obstacleView, _spawnPoint);
+                    return new LeftSideSpikeController(obstacleView, obstacleView.transform.position);
 
                 case ObstacleType.Right_Side_Spike:
-                    _obstacleView = _obstacleDictionary[ObstacleType.Right_Side_Spike].Item1;
-                    _spawnPoint = _obstacleDictionary[ObstacleType.Right_Side_Spike].Item2;
-
-                    return new SpikeController(_obstacleView, _spawnPoint);
+                    return new RightSideSpikeController(obstacleView, obstacleView.transform.position);
 
                 case ObstacleType.Rotating_Spike:
-                    _obstacleView = _obstacleDictionary[ObstacleType.Rotating_Spike].Item1;
-                    _spawnPoint = _obstacleDictionary[ObstacleType.Rotating_Spike].Item2;
-
-                    return new RotatingSpikeController(_obstacleView, _spawnPoint);
+                    return new RotatingSpikeController(obstacleView, obstacleView.transform.position);
 
                 default:
-                    Debug.LogError("No such type of obstacle found!");
+                    Debug.LogError("No such Obstacle Type found!");
                     return null;
             }
         }

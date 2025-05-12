@@ -1,6 +1,4 @@
-using UnityEngine;
 using ObjectPool;
-using Event;
 
 namespace Obstacle
 {
@@ -21,6 +19,6 @@ namespace Obstacle
             spawnedObstacle.Configure(_obstacleSO.ObstacleMoveSpeed, _obstacleSO.ObstacleRotationSpeed);
         }
 
-        public void ReturnObstacleToPool(ObstacleController obstacle) => _obstaclePool.ReturnItem(obstacle);
+        public void ReturnObstacleToPool(ObstacleController obstacle, ObstacleType type) => _obstaclePool.ReturnObstacle(obstacle, type);
     }
 }

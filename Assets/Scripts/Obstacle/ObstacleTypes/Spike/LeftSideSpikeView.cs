@@ -2,8 +2,8 @@ using UnityEngine;
 
 namespace Obstacle
 {
-    public class SpikeView : ObstacleView
+    public class LeftSideSpikeView : ObstacleView
     {
-        
+
     }
 }

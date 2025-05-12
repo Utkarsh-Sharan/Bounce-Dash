@@ -27,23 +27,20 @@ namespace Main
         {
             base.Awake();
 
-            CreateServices();
+            CreateServicesAndStartGame();
         }
 
-        private void CreateServices()
+        private void CreateServicesAndStartGame()
         {
             _playerService = new PlayerService(_playerSO);
             _obstacleService = new ObstacleService(_obstacleSO);
+
+            StartCoroutine(ObstacleSpawnRoutine());
         }
 
         private void OnEnable()
         {
             EventService.Instance.OnPlayerDeathEvent.Addlistener(GameOver);
-        }
-
-        private void Start()
-        {
-            StartCoroutine(ObstacleSpawnRoutine());
         }
 
         private IEnumerator ObstacleSpawnRoutine()
