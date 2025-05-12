@@ -17,11 +17,14 @@ namespace Game.UI
         [SerializeField] private Text _coinsCollectedText;
 
         private int _score = 0;
+        private int _coins = 0;
         private bool _isGameOver = false;
 
         private void OnEnable()
         {
-            EventService.Instance.OnPlayerDeathEvent.Addlistener(GameOver);
+            EventService.Instance.OnPlayerDeathEvent.AddListener(GameOver);
+            EventService.Instance.OnCoinCollectedEvent.AddListener(CoinCollected);
+
             _restartButton.onClick.AddListener(RestartGame);
             _mainMenuButton.onClick.AddListener(GoToMainMenu);
         }
@@ -29,6 +32,8 @@ namespace Game.UI
         private void Start()
         {
             StartCoroutine(ScoreRoutine());
+            _scoreText.text = $"Score: 0";
+            _coinsCollectedText.text = $": 0";
         }
 
         private IEnumerator ScoreRoutine()
@@ -40,6 +45,12 @@ namespace Game.UI
             }
         }
 
+        private void CoinCollected(int value)
+        {
+            _score += value;
+            _coinsCollectedText.text = $": {(++_coins).ToString()}";
+        } 
+
         private void GameOver()
         {
             _isGameOver = true;
@@ -49,12 +60,14 @@ namespace Game.UI
             _gameOverUIObject.SetActive(true);
         } 
 
-        private void RestartGame() => SceneManager.LoadScene(1);
+        private void RestartGame() => SceneManager.LoadScene(1);    //Can use enum instead of hard coded value.
         private void GoToMainMenu() => SceneManager.LoadScene(0);
 
         private void OnDisable()
         {
             EventService.Instance.OnPlayerDeathEvent.RemoveListener(GameOver);
+            EventService.Instance.OnCoinCollectedEvent.RemoveListener(CoinCollected);
+
             _restartButton.onClick.RemoveListener(RestartGame);
             _mainMenuButton.onClick.RemoveListener(GoToMainMenu);
         }

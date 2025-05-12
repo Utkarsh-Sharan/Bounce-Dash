@@ -6,6 +6,7 @@ namespace Event
     public class EventService : GenericMonoSingleton<EventService>
     {
         public EventController OnPlayerDeathEvent { get; private set; }
+        public EventController<int> OnCoinCollectedEvent { get; private set; }
 
         protected override void Awake()
         {
@@ -16,6 +17,7 @@ namespace Event
         private void InitializeEvents()
         {
             OnPlayerDeathEvent = new EventController();
+            OnCoinCollectedEvent = new EventController<int>();
         }
     }
 }

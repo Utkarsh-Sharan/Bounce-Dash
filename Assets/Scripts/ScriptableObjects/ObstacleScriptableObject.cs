@@ -9,7 +9,7 @@ public class ObstacleScriptableObject : ScriptableObject
     public float ObstacleSpawnRate;
     public float ObstacleMoveSpeed;
     public float ObstacleRotationSpeed;
-    public int ObstacleCount;
+    public int InitialObstacleCount;
 }
 
 [System.Serializable]

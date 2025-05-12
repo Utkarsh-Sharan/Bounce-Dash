@@ -3,10 +3,10 @@ using UnityEngine;
 using Obstacle;
 using Event;
 
-namespace ObjectPool
+namespace ObjectPool.Obstacle
 {
     //This script creates/activates random obstacles.
-    public class ObstaclePool : GenericObjectPool<ObstacleController>
+    public class ObstaclePool
     {
         private Dictionary<ObstacleType, Queue<ObstacleController>> _obstaclePool;
         private ObstacleScriptableObject _obstacleSO;
@@ -21,7 +21,7 @@ namespace ObjectPool
                 _obstaclePool[data.ObstacleType] = new Queue<ObstacleController>();
 
                 //Pre-instantiate a few of each obstacle type
-                for (int i = 0; i < _obstacleSO.ObstacleCount; ++i)
+                for (int i = 0; i < _obstacleSO.InitialObstacleCount; ++i)
                 {
                     ObstacleController controller = CreateObstacle(data);
                     controller.DeactivateObject();
