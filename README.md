@@ -78,12 +78,6 @@ To ensure smooth gameplay and performance across devices, especially mobile plat
 
 ---
 
-## Play Here
-
-https://outscal.com/utkarshsharan99/game/play-bounce-dash-game
-
----
-
 ## Watch Here
 
 https://www.loom.com/share/b583a85522c843049d748eab16f44fa0?sid=6ff6f119-138f-4104-82b0-c5df34bcf3d4
